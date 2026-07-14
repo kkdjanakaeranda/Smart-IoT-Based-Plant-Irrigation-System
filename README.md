@@ -102,6 +102,43 @@ Users can also monitor sensor values and manually control the irrigation pump us
 
 ---
 
+## ⚙️ Configuration
+
+Before uploading the code to the ESP32, update the following values in the Arduino sketch.
+
+### Blynk Configuration
+
+```cpp
+// Blynk Details
+#define BLYNK_TEMPLATE_ID ""      // Add your Blynk Template ID
+#define BLYNK_TEMPLATE_NAME ""    // Add your Blynk Template Name
+#define BLYNK_AUTH_TOKEN ""       // Add your Blynk Authentication Token
+```
+
+### Wi-Fi Configuration
+
+```cpp
+char ssid[] = "";   // Enter your Wi-Fi SSID
+char pass[] = "";   // Enter your Wi-Fi Password
+```
+
+After updating these values, upload the sketch to your ESP32 using the Arduino IDE.
+
+---
+
+## 📚 Required Libraries
+
+Install the following libraries from the Arduino Library Manager:
+
+- Blynk by Volodymyr Shymanskyy
+- DHT Sensor Library by Adafruit
+- Adafruit Unified Sensor
+- LiquidCrystal I2C
+- WiFi (ESP32 Built-in)
+- Wire (ESP32 Built-in)
+
+---
+
 # 🔄 System Workflow
 
 1. ESP32 powers on and connects to Wi-Fi.

@@ -1,4 +1,4 @@
-// blink details for ashen
+// blink details for app
 #define BLYNK_TEMPLATE_ID "" //add your template id
 #define BLYNK_TEMPLATE_NAME "" //add your template name
 #define BLYNK_AUTH_TOKEN "" //add your token
